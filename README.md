@@ -1,4 +1,4 @@
-# MEGA AI — Real-Time Face Detection Video Streaming System
+# StreamSight — Real-Time Face Detection Video Streaming System
 
 A production-ready, fully containerised system for real-time face detection in video streams. 
 
