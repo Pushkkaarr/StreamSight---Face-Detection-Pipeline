@@ -1,0 +1,16 @@
+:root {
+  --bg-color: #0d0d0d;
+  --accent-color: #00FF41;
+  --text-primary: #e0e0e0;
+  --text-secondary: #888888;
+  --panel-bg: #1a1a1a;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
