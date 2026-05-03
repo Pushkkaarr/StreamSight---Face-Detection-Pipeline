@@ -5,6 +5,8 @@ A production-ready, fully containerised system for real-time face detection in v
 ## Architecture Overview
 The system uses a React+Vite frontend to connect via WebSockets to a FastAPI backend. The frontend sends raw video frames (or another client could), which the backend processes using Google's MediaPipe for face detection. If a face is found, the backend uses Pillow (PIL) to draw a minimal matrix-green bounding box around it. The processed frames are placed in an `asyncio.Queue`, acting as a bridge, to be broadcasted instantly to all connected viewers on the stream WebSocket endpoint. Simultaneously, ROI detection metadata is asynchronously persisted to a PostgreSQL database via SQLAlchemy and Alembic, allowing the frontend to poll and display the latest detection statistics alongside the live video feed.
 
+<img width="1536" height="1024" alt="SteamSight - Video pipeline" src="https://github.com/user-attachments/assets/bca11332-7511-411f-9bed-c073462d18b0" />
+
 ## Prerequisites
 - Docker Desktop ≥ 4.x
 - No other dependencies are required.
